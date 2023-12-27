@@ -3,7 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 export default function PrivateLayout() {
   const navigate = useNavigate();
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   useEffect(() => {
     if (!isAuthenticated) {
